@@ -5,7 +5,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
 const app = express();
-const port = 8080;
+const port = 3000;
 const cors = require('cors');
 app.use(cors());
 
@@ -27,7 +27,7 @@ mongoose
   });
 
 app.listen(port, () => {
-  console.log('Server running on port 8000');
+  console.log(`Server running on port ${port}`);
 });
 
 const User = require('./models/user');
